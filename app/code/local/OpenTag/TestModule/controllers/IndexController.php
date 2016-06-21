@@ -1,8 +1,8 @@
 <?php
 
-class OpenTag_TestModule_Controller_IndexController extends Mage_Core_Controller_Front_Action
+class OpenTag_TestModule_IndexController extends Mage_Core_Controller_Front_Action
 {
-    public function viewAction()
+    public function indexAction()
     {
         $this->loadLayout();
         $this->renderLayout();

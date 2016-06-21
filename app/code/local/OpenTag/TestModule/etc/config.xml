@@ -14,4 +14,22 @@
             </opentag_testmodule_setup>
         </resources>
     </global>
+    <frontend>
+        <routers>
+            <opentag_testmodule>
+                <use>standard</use>
+                <args>
+                    <module>OpenTag_TestModule</module>
+                    <frontName>test_module</frontName>
+                </args>
+            </opentag_testmodule>
+        </routers>
+        <layout>
+            <updates>
+                <opentag_testmodule>
+                    <file>opentag_testmodule.xml</file>
+                </opentag_testmodule>
+            </updates>
+        </layout>
+    </frontend>
 </config>
