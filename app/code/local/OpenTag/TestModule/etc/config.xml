@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <OpenTag_TestModule>
+            <version>1.0.0</version>
+        </OpenTag_TestModule>
+    </modules>
+
+    <global>
+        <resources>
+            <opentag_testmodule_setup>
+                <setup>
+                    <module>OpenTag_TestModule</module>
+                </setup>
+            </opentag_testmodule_setup>
+        </resources>
+    </global>
+
+</config>
