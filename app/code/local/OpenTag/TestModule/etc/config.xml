@@ -13,6 +13,19 @@
                 </setup>
             </opentag_testmodule_setup>
         </resources>
+
+        <events>
+            <eventSendEmail>
+                <observers>
+                    <OpenTag_TestModule_my_custom_event_observer>
+                        <type>singleton</type>
+                        <class>TestModule/observer</class>
+                        <method>eventSendEmail</method>
+                    </OpenTag_TestModule_my_custom_event_observer>
+                </observers>
+            </eventSendEmail>
+        </events>
+
     </global>
     <frontend>
         <routers>
@@ -24,6 +37,7 @@
                 </args>
             </opentag_testmodule>
         </routers>
+        <!--
         <layout>
             <updates>
                 <opentag_testmodule>
@@ -31,5 +45,6 @@
                 </opentag_testmodule>
             </updates>
         </layout>
+        -->
     </frontend>
 </config>
