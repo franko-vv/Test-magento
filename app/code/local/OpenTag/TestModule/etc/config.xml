@@ -6,6 +6,29 @@
         </OpenTag_TestModule>
     </modules>
     <global>
+
+        <blocks>
+            <testmodule>
+                <class>OpenTag_TestModule_Block</class>
+            </testmodule>
+        </blocks>
+
+        <models>
+            <testmodule>
+                <class>OpenTag_TestModule_Model</class>
+                <resourceModel>testmodule_resource</resourceModel>
+            </testmodule>
+            <testmodule_resource>
+                <class>OpenTag_TestModule_Model_Resource</class>
+                <entities>
+                    <testcustommodel>
+                        <!-- Table name -->
+                        <table>ivision_contact_form</table>
+                    </testcustommodel>
+                </entities>
+            </testmodule_resource>
+        </models>
+
         <resources>
             <opentag_testmodule_setup>
                 <setup>
@@ -47,4 +70,32 @@
         </layout>
         -->
     </frontend>
+
+<!--
+    <admin>
+        <routers>
+            <testmodule>
+                <use>admin</use>
+                <args>
+                    <module>OpenTag_TestModule</module>
+                    <frontName>admin_testmodule</frontName>
+                </args>
+            </testmodule>
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+            <menu1 translate="title" module="TestModule">
+                <title>OpenTag - Test Module</title>
+                <sort_order>60</sort_order>
+                <children>
+                    <menuitem1 module="TestModule">
+                        <title>Children Item</title>
+                        <action>testmodule/childrenItem</action>
+                    </menuitem1>
+                </children>
+            </menu1>
+        </menu>
+    </adminhtml>
+-->
 </config>
