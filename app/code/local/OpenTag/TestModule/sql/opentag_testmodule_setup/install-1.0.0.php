@@ -6,7 +6,7 @@ $connection = $installer->getConnection();
 $installer->startSetup();
 
 $table = $installer->getConnection()
-    ->newTable($installer->getTable('ivision_contact_form'))
+    ->newTable($installer->getTable('test_contact_form'))
     ->addColumn('id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
         'identity'  => true,
         'unsigned'  => true,
