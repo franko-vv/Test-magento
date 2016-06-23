@@ -3,31 +3,29 @@ class OpenTag_TestModule_Model_Observer
 {
     const ADMIN_EMAIL = "admin@example.com";
 
-    public function __construct()
-    {
-    }
-
     public function eventSendEmail($observer)
     {
         $event = $observer->getEvent();
+        $data = $event->getFormmessage()->getData();
+        $email = $event->getEmail();
 
-        $message = $event->getMessageBody();
-
-        $this->sendEmailToAdmin($message);
-        exit;
+        $this->sendEmailToAdmin($data, $email);
     }
 
-    public function sendEmailToAdmin($message)
+    public function sendEmailToAdmin($text, $email)
     {
-        $params = $this->getRequest()->getParams();
-
         $mail = new Zend_Mail();
-        $mail->setBodyText($params['comment']);
-        $mail->setFrom($params['email'], $params['name']);
-        $mail->addTo(ADMIN_EMAIL, 'Some Recipient');
-        $mail->setSubject('Test Inchoo_SimpleContact Module for Magento');
-        try {
-            $mail->send();
+        $mail->setBodyText($text['message']);
+        $mail->setFrom($email, $text['name']);
+        $mail->addTo(self::ADMIN_EMAIL, 'Some Recipient');
+        $mail->setSubject('TestModule for Magento');
+
+        try
+        {
+            //$mail->send();
+            $emailMessage = 'Message has been sent from ' . $email . ' ' . $text['name'] .
+                            ' to ' . self::ADMIN_EMAIL . ' with message body: \n' . $text['message'];
+            Mage::log($emailMessage, null, 'email_log.log');
         }
         catch(Exception $ex) {
             Mage::getSingleton('core/session')->addError('Unable to send email. Sample of a custom notification error from OpenTag_TestModule.');

@@ -5,13 +5,25 @@
             <version>1.0.0</version>
         </OpenTag_TestModule>
     </modules>
-    <global>
 
+    <global>
         <blocks>
             <testmodule>
                 <class>OpenTag_TestModule_Block</class>
             </testmodule>
         </blocks>
+
+        <blocks>
+            <testmodule_adminhtml>
+                <class>OpenTag_TestModule_Block_AdminHtml</class>
+            </testmodule_adminhtml>
+        </blocks>
+
+        <helpers>
+            <OpenTag_TestModule>
+                <class>OpenTag_TestModule_Helper</class>
+            </OpenTag_TestModule>
+        </helpers>
 
         <models>
             <testmodule>
@@ -23,7 +35,7 @@
                 <entities>
                     <testcustommodel>
                         <!-- Table name -->
-                        <table>ivision_contact_form</table>
+                        <table>test_contact_form</table>
                     </testcustommodel>
                 </entities>
             </testmodule_resource>
@@ -38,15 +50,15 @@
         </resources>
 
         <events>
-            <eventSendEmail>
+            <custom_model_sendemail>
                 <observers>
-                    <OpenTag_TestModule_my_custom_event_observer>
+                    <opentag_testmodule_model_observer>
                         <type>singleton</type>
-                        <class>TestModule/observer</class>
+                        <class>OpenTag_TestModule_Model_Observer</class>
                         <method>eventSendEmail</method>
-                    </OpenTag_TestModule_my_custom_event_observer>
+                    </opentag_testmodule_model_observer>
                 </observers>
-            </eventSendEmail>
+            </custom_model_sendemail>
         </events>
 
     </global>
@@ -71,31 +83,18 @@
         -->
     </frontend>
 
-<!--
     <admin>
         <routers>
-            <testmodule>
+            <opentag_testmodule>
                 <use>admin</use>
                 <args>
+                    // Where to find adminhtml controllers
                     <module>OpenTag_TestModule</module>
+                    // Actual url
                     <frontName>admin_testmodule</frontName>
                 </args>
-            </testmodule>
+            </opentag_testmodule>
         </routers>
     </admin>
-    <adminhtml>
-        <menu>
-            <menu1 translate="title" module="TestModule">
-                <title>OpenTag - Test Module</title>
-                <sort_order>60</sort_order>
-                <children>
-                    <menuitem1 module="TestModule">
-                        <title>Children Item</title>
-                        <action>testmodule/childrenItem</action>
-                    </menuitem1>
-                </children>
-            </menu1>
-        </menu>
-    </adminhtml>
--->
+
 </config>

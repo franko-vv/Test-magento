@@ -52,12 +52,18 @@ class OpenTag_TestModule_IndexController extends Mage_Core_Controller_Front_Acti
                 $testCustomModel->setData('second_name', $secondName);
                 $testCustomModel->setData('message', $message);
                 $testCustomModel->save();
+
+                Mage::dispatchEvent('custom_model_sendemail', array (
+                    'formmessage' => $testCustomModel,
+                    'email' => $email
+                ));
             }
             catch (Mage_Core_Exception $ex)
             {
                 $session->addException($ex, $this->__('There was a problem. Please check your input information'));
             }
         }
+
         $this->_redirectReferer();
     }
 
