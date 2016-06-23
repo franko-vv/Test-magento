@@ -8,21 +8,20 @@
 
     <global>
         <blocks>
-            <testmodule_adminhtml>
-                <class>OpenTag_TestModule_Block_AdminHtml</class>
-            </testmodule_adminhtml>
+            <opentag_testmodule>
+                <class>OpenTag_TestModule_Block</class>
+            </opentag_testmodule>
         </blocks>
         <helpers>
-            <OpenTag_TestModule>
+            <opentag_testmodule>
                 <class>OpenTag_TestModule_Helper</class>
-            </OpenTag_TestModule>
+            </opentag_testmodule>
         </helpers>
-
         <models>
-            <testmodule>
+            <opentag_testmodule>
                 <class>OpenTag_TestModule_Model</class>
                 <resourceModel>testmodule_resource</resourceModel>
-            </testmodule>
+            </opentag_testmodule>
             <testmodule_resource>
                 <class>OpenTag_TestModule_Model_Resource</class>
                 <entities>
@@ -66,7 +65,7 @@
         <layout>
             <updates>
                 <opentag_testmodule>
-                    <file>testmodule.xml</file>
+                    <file>opentag/testmodule.xml</file>
                 </opentag_testmodule>
             </updates>
         </layout>
@@ -84,20 +83,13 @@
 
     <admin>
         <routers>
-            <opentag_testmodule>
-                <use>admin</use>
+            <adminhtml>
                 <args>
                     <modules>
                         <opentag_testmodule before="Mage_Adminhtml">OpenTag_TestModule_Adminhtml</opentag_testmodule>
                     </modules>
-                    <!--
-                    // Where to find adminhtml controllers
-                    <module>OpenTag_TestModule</module>
-                    // Actual url
-                    <frontName>admintest</frontName>
-                    -->
                 </args>
-            </opentag_testmodule>
+            </adminhtml>
         </routers>
     </admin>
 </config>

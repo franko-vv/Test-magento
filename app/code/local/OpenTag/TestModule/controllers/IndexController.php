@@ -46,7 +46,7 @@ class OpenTag_TestModule_IndexController extends Mage_Core_Controller_Front_Acti
 
                 // TODO: Unit Tests
                 // Save data to Db
-                $testCustomModel = Mage::getModel('testmodule/testcustommodel');
+                $testCustomModel = Mage::getModel('opentag_testmodule/testcustommodel');
                 $testCustomModel->setData('name', $firstName);
                 $testCustomModel->setData('second_name', $secondName);
                 $testCustomModel->setData('message', $message);

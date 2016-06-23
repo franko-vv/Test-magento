@@ -3,6 +3,6 @@ class OpenTag_TestModule_Model_Resource_TestCustomModel extends Mage_Core_Model_
 {
     protected function _construct()
     {
-        $this->_init('testmodule/testcustommodel', 'id');
+        $this->_init('opentag_testmodule/testcustommodel', 'id');
     }
 }
