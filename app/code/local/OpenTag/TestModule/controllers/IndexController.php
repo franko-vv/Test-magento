@@ -9,7 +9,15 @@ class OpenTag_TestModule_IndexController extends Mage_Core_Controller_Front_Acti
         $this->loadLayout();
 
         // Add new block - opentag/default/testmodule/contact.phtml
-        $block = $this->getLayout()->createBlock('testmodule/contact');
+        //$block = $this->getLayout()->createBlock('testmodule/contact');
+
+        $block = $this->getLayout()->createBlock(
+            'Mage_Core_Block_Template',
+            'contact',
+            array(
+                'template' => 'testmodule/contact.phtml'
+            )
+        );
         $this->getLayout()->getBlock('content')->append($block);
 
         $this->renderLayout();
@@ -38,7 +46,7 @@ class OpenTag_TestModule_IndexController extends Mage_Core_Controller_Front_Acti
 
                 // TODO: Unit Tests
                 // Save data to Db
-                $testCustomModel = Mage::getModel('testmodule/testcustommodel');
+                $testCustomModel = Mage::getModel('opentag_testmodule/testcustommodel');
                 $testCustomModel->setData('name', $firstName);
                 $testCustomModel->setData('second_name', $secondName);
                 $testCustomModel->setData('message', $message);
@@ -48,6 +56,9 @@ class OpenTag_TestModule_IndexController extends Mage_Core_Controller_Front_Acti
                     'formmessage' => $testCustomModel,
                     'email' => $email
                 ));
+
+                //TODO:
+                $session->addSuccess($this->__('Thank you. Item has been saved.'));
             }
             catch (Mage_Core_Exception $ex)
             {

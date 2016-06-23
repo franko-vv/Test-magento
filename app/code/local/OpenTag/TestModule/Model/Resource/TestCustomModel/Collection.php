@@ -4,6 +4,6 @@ class OpenTag_TestModule_Model_Resource_TestCustomModel_Collection
 {
     protected function _construct()
     {
-        $this->_init('testmodule/testcustommodel');
+        $this->_init('opentag_testmodule/testcustommodel');
     }
 }
