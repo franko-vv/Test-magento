@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <layout version="1.0.0">
-    <default>
+    <default> <!--test_module_index_index-->
         <reference name="content">
-            <block type="core/template" name="testmodule" template="testmodule/contact.phtml" />
+            <block type="page/html" name="testmodule" template="testmodule/contact.phtml" />
         </reference>
     </default>
 </layout>

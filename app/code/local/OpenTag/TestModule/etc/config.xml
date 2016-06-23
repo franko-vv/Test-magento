@@ -8,17 +8,10 @@
 
     <global>
         <blocks>
-            <testmodule>
-                <class>OpenTag_TestModule_Block</class>
-            </testmodule>
-        </blocks>
-
-        <blocks>
             <testmodule_adminhtml>
                 <class>OpenTag_TestModule_Block_AdminHtml</class>
             </testmodule_adminhtml>
         </blocks>
-
         <helpers>
             <OpenTag_TestModule>
                 <class>OpenTag_TestModule_Helper</class>
@@ -40,7 +33,6 @@
                 </entities>
             </testmodule_resource>
         </models>
-
         <resources>
             <opentag_testmodule_setup>
                 <setup>
@@ -48,7 +40,6 @@
                 </setup>
             </opentag_testmodule_setup>
         </resources>
-
         <events>
             <custom_model_sendemail>
                 <observers>
@@ -60,8 +51,8 @@
                 </observers>
             </custom_model_sendemail>
         </events>
-
     </global>
+
     <frontend>
         <routers>
             <opentag_testmodule>
@@ -72,29 +63,41 @@
                 </args>
             </opentag_testmodule>
         </routers>
-        <!--
         <layout>
             <updates>
                 <opentag_testmodule>
-                    <file>opentag_testmodule.xml</file>
+                    <file>testmodule.xml</file>
                 </opentag_testmodule>
             </updates>
         </layout>
-        -->
     </frontend>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <opentag_testmodule>
+                    <file>testmodule/testitems.xml</file>
+                </opentag_testmodule>
+            </updates>
+        </layout>
+    </adminhtml>
 
     <admin>
         <routers>
             <opentag_testmodule>
                 <use>admin</use>
                 <args>
+                    <modules>
+                        <opentag_testmodule before="Mage_Adminhtml">OpenTag_TestModule_Adminhtml</opentag_testmodule>
+                    </modules>
+                    <!--
                     // Where to find adminhtml controllers
                     <module>OpenTag_TestModule</module>
                     // Actual url
-                    <frontName>admin_testmodule</frontName>
+                    <frontName>admintest</frontName>
+                    -->
                 </args>
             </opentag_testmodule>
         </routers>
     </admin>
-
 </config>
