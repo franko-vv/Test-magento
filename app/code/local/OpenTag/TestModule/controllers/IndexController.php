@@ -56,6 +56,9 @@ class OpenTag_TestModule_IndexController extends Mage_Core_Controller_Front_Acti
                     'formmessage' => $testCustomModel,
                     'email' => $email
                 ));
+
+                //TODO:
+                $session->addSuccess($this->__('Thank you. Item has been saved.'));
             }
             catch (Mage_Core_Exception $ex)
             {

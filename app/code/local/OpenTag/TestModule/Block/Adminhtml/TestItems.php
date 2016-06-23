@@ -6,7 +6,7 @@ class OpenTag_TestModule_Block_AdminHtml_TestItems
     {
         //parent::_construct();
 
-        $this->_addButtonLabel = Mage::helper('opentag_testmodule')->__('Add new quote');
+        $this->_addButtonLabel = Mage::helper('opentag_testmodule')->__('Add new item');
 
         $this->_blockGroup = 'opentag_testmodule';      // имя модуля
         $this->_controller = 'adminhtml_testitems';     // путь относительно корня модуля где лежит grid
