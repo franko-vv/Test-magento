@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <OpenTag_TestModule>
+            <version>1.0.0</version>
+        </OpenTag_TestModule>
+    </modules>
+
+    <global>
+        <blocks>
+            <opentag_testmodule>
+                <class>OpenTag_TestModule_Block</class>
+            </opentag_testmodule>
+        </blocks>
+        <helpers>
+            <opentag_testmodule>
+                <class>OpenTag_TestModule_Helper</class>
+            </opentag_testmodule>
+        </helpers>
+        <models>
+            <opentag_testmodule>
+                <class>OpenTag_TestModule_Model</class>
+                <resourceModel>testmodule_resource</resourceModel>
+            </opentag_testmodule>
+            <testmodule_resource>
+                <class>OpenTag_TestModule_Model_Resource</class>
+                <entities>
+                    <testcustommodel>
+                        <!-- Table name -->
+                        <table>test_contact_form</table>
+                    </testcustommodel>
+                </entities>
+            </testmodule_resource>
+        </models>
+        <resources>
+            <opentag_testmodule_setup>
+                <setup>
+                    <module>OpenTag_TestModule</module>
+                </setup>
+            </opentag_testmodule_setup>
+        </resources>
+        <events>
+            <custom_model_sendemail>
+                <observers>
+                    <opentag_testmodule_model_observer>
+                        <type>singleton</type>
+                        <class>OpenTag_TestModule_Model_Observer</class>
+                        <method>eventSendEmail</method>
+                    </opentag_testmodule_model_observer>
+                </observers>
+            </custom_model_sendemail>
+        </events>
+    </global>
+
+    <frontend>
+        <routers>
+            <opentag_testmodule>
+                <use>standard</use>
+                <args>
+                    <module>OpenTag_TestModule</module>
+                    <frontName>test_module</frontName>
+                </args>
+            </opentag_testmodule>
+        </routers>
+        <layout>
+            <updates>
+                <opentag_testmodule>
+                    <file>opentag/testmodule.xml</file>
+                </opentag_testmodule>
+            </updates>
+        </layout>
+    </frontend>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <opentag_testmodule>
+                    <file>testmodule/testitems.xml</file>
+                </opentag_testmodule>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <opentag_testmodule before="Mage_Adminhtml">OpenTag_TestModule_Adminhtml</opentag_testmodule>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <OpenTag_TestModule>
+            <active>true</active>
+            <codePool>local</codePool>
+        </OpenTag_TestModule>
+    </modules>
+</config>
