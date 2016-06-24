@@ -21,8 +21,8 @@ class OpenTag_TestModule_Block_Adminhtml_Edit_Form extends Mage_Adminhtml_Block_
         $fieldset->addField('name', 'text', array(
             'name' => 'name',
             'label' => Mage::helper('opentag_testmodule')->__('First Name'),
-            'minlength' => '2',
-            'required' => true
+            'required' => true,
+            'class' => 'required-entry validate-length minimum-length-2'
         ));
 
         $fieldset->addField('second_name', 'text', array(
@@ -31,7 +31,7 @@ class OpenTag_TestModule_Block_Adminhtml_Edit_Form extends Mage_Adminhtml_Block_
             'required' => false
         ));
 
-        $fieldset->addField('message', 'text', array(
+        $fieldset->addField('message', 'textarea', array(
             'name' => 'message',
             'label' => Mage::helper('opentag_testmodule')->__('Message'),
             'required' => false
