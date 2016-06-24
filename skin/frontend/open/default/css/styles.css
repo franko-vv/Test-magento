@@ -3991,13 +3991,17 @@ a.skip-link {
 .footer .block-title strong {
   font-weight: normal;
 }
+#testmodule{
+  color: #3399cc;
+}
 .footer .block-title,
-.footer address {
+.footer address
+{
   color: #3399cc;
 }
 .footer .links {
   float: left;
-  width: 17%;
+  width: 14%;
   padding: 0 30px 0 0;
   margin-bottom: 30px;
 }
@@ -4014,7 +4018,7 @@ a.skip-link {
 }
 .footer .block-subscribe {
   float: right;
-  width: 320px;
+  width: 300px;
   margin-bottom: 30px;
 }
 .footer .links,
