@@ -3,7 +3,7 @@
     <menu>
         <opentag_testmodule translate="title" module="opentag_testmodule">
 
-             <title>Client contacts</title>
+             <title>Test Client Info</title>
              <sort_order>100</sort_order>
              <action>adminhtml/testitems</action>
              <!--url для index страниц модуля. После adminhtml/ - названия контроллера в папке controllers/Adminhtml-->
