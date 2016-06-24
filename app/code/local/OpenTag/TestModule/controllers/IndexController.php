@@ -6,11 +6,12 @@ class OpenTag_TestModule_IndexController extends Mage_Core_Controller_Front_Acti
 
     public function indexAction()
     {
+        $this->_title($this->__('Test Module'));
+
         $this->loadLayout();
 
         // Add new block - opentag/default/testmodule/contact.phtml
         //$block = $this->getLayout()->createBlock('testmodule/contact');
-
         $block = $this->getLayout()->createBlock(
             'Mage_Core_Block_Template',
             'contact',

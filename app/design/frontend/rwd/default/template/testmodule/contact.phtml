@@ -1,0 +1,44 @@
+<div class="box simple_contact">
+
+    <form id="test_module_form" name="simple_contact_form"
+          action="<?php echo $this->getUrl('test_module/index/saveData') ?>" method="post">
+
+        <fieldset class="group-select">
+            <h4 class="legend">Test module form</h4>
+
+            <div class="input-box">
+                <label for="first_name">First name:</label>
+                <br />
+                <input name="first_name" id="first_name" title="Write your first name" value="" class="required-entry input-text validate-length minimum-length-2" type="text" />
+            </div>
+
+            <div class="input-box">
+                <label for="second_name">Second name:</label>
+                <br />
+                <input name="second_name" id="second_name" title="Second Name" value="" class="input-text" type="text" />
+            </div>
+
+            <div class="input-box">
+                <label for="email">Email:</label>
+                <br />
+                <input name="email" id="email" title="Email" value="" class="required-entry input-text validate-email" type="email" />
+            </div>
+
+            <div class="input-box">
+                <label for="Message">Message:</label>
+                <br />
+                <textarea name="Message" id="message" title="Message" class="input-text"></textarea>
+            </div>
+        </fieldset>
+        <div class="button-set">
+            <button class="form-button" type="submit"><span>Submit</span></button>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        //<![CDATA][
+        var contactFormDetail = new VarienForm('test_module_form');
+        //]]
+    </script>
+
+</div>

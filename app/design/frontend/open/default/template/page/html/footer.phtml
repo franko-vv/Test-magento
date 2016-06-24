@@ -1,0 +1,7 @@
+<div class="footer-container">
+    <div class="footer">
+        <?php echo $this->getChildHtml() ?>
+        <?php echo $this->getLayout()->createBlock('core/template')->setTemplate('newfield/newfield.phtml')->toHtml(); ?>
+        <address class="copyright"><?php echo $this->getCopyright() ?></address>
+    </div>
+</div>
