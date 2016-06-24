@@ -3,7 +3,7 @@ class OpenTag_TestModule_AdminHtml_TestItemsController extends Mage_Adminhtml_Co
 {
     public function indexAction()
     {
-        $this->_title($this->__('Testitems'));
+        $this->_title($this->__('Test Items'));
 
         $this->loadLayout();
         $this->_setActiveMenu('opentag_testmodule');
@@ -38,7 +38,7 @@ class OpenTag_TestModule_AdminHtml_TestItemsController extends Mage_Adminhtml_Co
     {
         $this->loadLayout();
         $this->getResponse()->setBody(
-            $this->getLayout()->createBlock('opentag_testmodule/adminhtml_testitem')->toHtml()
+            $this->getLayout()->createBlock('opentag_testmodule/adminhtml_testitems')->toHtml()
         );
     }
 

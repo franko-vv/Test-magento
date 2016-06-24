@@ -1,4 +1,8 @@
 <?php
+
+/**
+ * Config Test Items Edit View
+ */
 class OpenTag_TestModule_Block_Adminhtml_Edit extends Mage_Adminhtml_Block_Widget_Form_Container
 {
     protected function _construct()
