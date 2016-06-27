@@ -65,9 +65,17 @@
         <layout>
             <updates>
                 <opentag_testmodule>
+                    <file>mycatalog.xml</file>
+                </opentag_testmodule>
+            </updates>
+
+            <!--
+            <updates>
+                <opentag_testmodule>
                     <file>opentag/testmodule.xml</file>
                 </opentag_testmodule>
             </updates>
+            -->
         </layout>
     </frontend>
 
