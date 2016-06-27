@@ -4958,10 +4958,7 @@ p.product-name a:hover {
   margin-bottom: 10px;
   border: 0;
 }
-.product-view .product-shop {
-  width: 50%;
-  float: right;
-}
+
 .product-view .product-shop .product-name {
   display: none;
   float: left;
@@ -5083,10 +5080,6 @@ p.product-name a:hover {
   .product-view .product-shop .price-box .price-including-tax span {
     display: block;
   }
-}
-.product-img-box {
-  width: 50%;
-  float: left;
 }
 .product-img-box .product-name h1 {
   border: 0;
@@ -10641,4 +10634,13 @@ div.calendar table td.button {
   font-size: 44px;
   font-weight: 300;
   padding: 8px 40px;
+}
+
+.product-img-box {
+  width: 35%;
+  float: right;
+}
+.product-view .product-shop {
+  width: 65%;
+  float: left;
 }
