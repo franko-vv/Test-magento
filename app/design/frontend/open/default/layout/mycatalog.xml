@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <opentag_testmodule_catalog_index>
+
+        <reference name="head">
+            <action method="setTitle" translate="title">
+                <title>My catalog</title>
+            </action>
+        </reference>
+
+        <reference name="header">
+            <remove name="top.menu" />
+        </reference>
+
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+
+        <reference name="content">
+            <block type="catalog/product_list" name="product_list" template="catalog/product/list.phtml">
+                <block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml" />
+                    <block type="page/html_pager" name="product_list_toolbar_pager" />
+
+                <action method="setColumnCount"><value>10</value></action>
+            </block>
+        </reference>
+
+        <remove name="footer" />
+
+    </opentag_testmodule_catalog_index>
+
+    <PRODUCT_TYPE_simple translate="label" module="catalog">
+        <label>Catalog Product View (Simple)</label>
+        <reference name="product.info">
+            <action method="setTemplate">
+                <template>product/view.phtml</template></action>
+        </reference>
+    </PRODUCT_TYPE_simple>
+    <PRODUCT_TYPE_configurable translate="label" module="catalog">
+        <label>Catalog Product View (Configurable)</label>
+        <reference name="product.info">
+            <action method="setTemplate">
+                <template>product/view.phtml</template></action>
+        </reference>
+    </PRODUCT_TYPE_configurable>
+    <PRODUCT_TYPE_grouped translate="label" module="catalog">
+        <label>Catalog Product View (Grouped)</label>
+        <reference name="product.info">
+            <action method="setTemplate">
+                <template>product/view.phtml</template></action>
+        </reference>
+    </PRODUCT_TYPE_grouped>
+    <PRODUCT_TYPE_virtual translate="label" module="catalog">
+        <label>Catalog Product View (Virtual)</label>
+        <reference name="product.info">
+            <action method="setTemplate">
+                <template>product/view.phtml</template></action>
+        </reference>
+    </PRODUCT_TYPE_virtual>
+</layout>
