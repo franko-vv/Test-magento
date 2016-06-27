@@ -10605,3 +10605,40 @@ div.calendar table td.button {
   color: inherit;
   text-transform: none;
 }
+
+
+
+/* ============================================ *
+ * Custom css
+ * ============================================ */
+.logo-404 img {
+  margin-left: 40%;
+}
+.content-404{
+  text-align: center;
+}
+.content-404 img {
+  margin-left: 16%;
+}
+.content-404 h1{
+  color: #363432;
+  font-family: 'Roboto', sans-serif;
+  font-size: 41px;
+  font-weight: 300;
+}
+.content-404 p{
+  color: #363432;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+.content-404 h2{
+  margin-top: 50px;
+}
+.content-404 h2 a {
+  background: #FE980F;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 44px;
+  font-weight: 300;
+  padding: 8px 40px;
+}
