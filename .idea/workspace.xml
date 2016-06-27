@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84991aa6-cbb7-4e72-aa57-77d1d25e989a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/frontend/open/default/template/product/view.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/open/default/template/page/html/footer.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/open/default/template/page/html/footer.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/open/default/layout/mycatalog.xml" afterPath="$PROJECT_DIR$/app/design/frontend/open/default/layout/mycatalog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/open/default/css/styles.css" afterPath="$PROJECT_DIR$/skin/frontend/open/default/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/open/default/template/product/view.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/open/default/template/product/view.phtml" />
     </list>
     <ignored path="local.magento.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,28 +24,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mycatalog.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mycatalog.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/design/frontend/open/default/layout/mycatalog.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.8812849">
               <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.phtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/open/default/template/product/view.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5362319">
-              <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="39" />
-              <folding>
-                <element signature="e#6#952#0#PHP" expanded="true" />
-                <element signature="n#div#1;n#form#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#form#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#script#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -104,8 +84,8 @@
         <option value="$PROJECT_DIR$/app/design/frontend/open/default/template/page/html/footer.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/OpenTag/TestModule/controllers/ProductController.php" />
         <option value="$PROJECT_DIR$/app/design/frontend/open/default/layout/mycatalog.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/open/default/template/product/view.phtml" />
         <option value="$PROJECT_DIR$/skin/frontend/open/default/css/styles.css" />
+        <option value="$PROJECT_DIR$/app/design/frontend/open/default/template/product/view.phtml" />
       </list>
     </option>
   </component>
@@ -767,7 +747,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29297996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1167,14 +1147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/open/default/layout/mycatalog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/etc/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1203,15 +1175,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/open/default/template/product/view.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5362319">
-          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.56666666">
+          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
           <folding>
             <element signature="e#6#952#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#form#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#3;n#form#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#script#0;n#div#0;n#div#1;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#1;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/open/default/layout/mycatalog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8812849">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
